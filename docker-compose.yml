@@ -1,0 +1,6 @@
+version: '1'
+services:
+  php7-LFI:
+    build: .
+    ports:
+      - "8001:80"
