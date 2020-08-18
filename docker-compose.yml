@@ -1,6 +1,10 @@
-version: '1'
+version: '2'
 services:
   php7-LFI:
-    build: .
+    image: php7-lfi
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
       - "8001:80"
